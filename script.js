@@ -93,6 +93,7 @@ window.onload = function()
                     this.context.moveTo(this.lastPosition.x, this.lastPosition.y);
                     this.context.lineTo(this.mouseX, this.mouseY);
                     this.context.closePath();
+                    this.context.strokeStyle = this.hexa;
                     this.context.stroke();
                     this.lastPosition = {
                       x: this.mouseX,
